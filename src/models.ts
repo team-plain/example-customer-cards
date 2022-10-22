@@ -1,15 +1,6 @@
 import { z } from 'zod';
 import {Component} from "./components";
 
-export const RequestBody = z.object({
-  keys: z.array(z.string()),
-  customer: z.object({
-    externalId: z.string(),
-    email: z.string(),
-  }),
-});
-export type RequestBody = z.infer<typeof RequestBody>;
-
 export const Card = z.object({
   key: z.string(),
   timeToLiveSeconds: z.number().int().min(0).nullish().default(null),

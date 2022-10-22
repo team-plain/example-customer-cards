@@ -1,7 +1,7 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
+import { ResponseBody } from '../src/models';
 import { subscriptionStatus } from '../src/cards/subscriptionStatus';
-
-const demoCards = [subscriptionStatus];
+import { adminLinks } from '../src/cards/adminLinks';
 
 export default function handler(req: VercelRequest, res: VercelResponse) {
   console.log(`Request received:`);
@@ -10,7 +10,9 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
     headers: req.headers,
   });
 
-  res.status(200).json({
-    cards: demoCards,
-  });
+  const response: ResponseBody = {
+    cards: [subscriptionStatus, adminLinks],
+  };
+
+  res.status(200).json(response);
 }
