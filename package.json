@@ -9,5 +9,8 @@
   "private": true,
   "scripts": {
     "dev": "vercel dev"
+  },
+  "dependencies": {
+    "@vercel/node": "^2.5.26"
   }
 }
