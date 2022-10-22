@@ -11,6 +11,8 @@
     "dev": "vercel dev"
   },
   "dependencies": {
-    "@vercel/node": "^2.5.26"
+    "@vercel/node": "^2.5.26",
+    "prettier": "^2.7.1",
+    "zod": "^3.19.1"
   }
 }
