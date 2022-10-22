@@ -1,6 +1,6 @@
 {
   "functions": {
-    "dist/index.js": {
+    "src/index.ts": {
       "memory": 1024
     }
   },
