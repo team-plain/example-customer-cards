@@ -9,7 +9,8 @@
   "private": true,
   "scripts": {
     "dev": "vercel dev",
-    "lint": "prettier --config=.prettierrc --check '**/*.{ts,tsx}'"
+    "lint": "prettier --config=.prettierrc --check '**/*.{ts,tsx}'",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@vercel/node": "^2.5.26",

@@ -1,0 +1,33 @@
+name: Lint
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '14.19'
+      - uses: actions/cache@v3
+        with:
+          path: ~/.pnpm-store
+          key: v4-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            v4-pnpm-
+      - name: Install pnpm
+        run: |
+          curl -f https://get.pnpm.io/v6.16.js | node - add --global pnpm@7
+          pnpm config set store-dir ~/.pnpm-store
+      - name: Install deps
+        run: pnpm i
+      - name: Lint
+        run: pnpm run typecheck
