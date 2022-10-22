@@ -1,0 +1,20 @@
+{
+  "name": "@team-plain/example-customer-cards-api",
+  "description": "Example customer cards that can be used for testing and learning",
+  "version": "1.0.0",
+  "engines": {
+    "node": "14.x",
+    "pnpm": "7.x"
+  },
+  "private": true,
+  "scripts": {
+    "dev": "vercel dev",
+    "lint": "prettier --config=.prettierrc --check '**/*.{ts,tsx}'",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@vercel/node": "^2.5.26",
+    "prettier": "^2.7.1",
+    "zod": "^3.19.1"
+  }
+}
