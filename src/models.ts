@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import {Component} from "./components";
+import { Component } from './components';
 
 export const Card = z.object({
   key: z.string(),

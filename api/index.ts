@@ -2,6 +2,7 @@ import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { ResponseBody } from '../src/models';
 import { subscriptionStatus } from '../src/cards/subscriptionStatus';
 import { usefulLinks } from '../src/cards/usefulLinks';
+import { timer } from '../src/cards/timer';
 
 export default function handler(req: VercelRequest, res: VercelResponse) {
   console.log(`Received request:`);
@@ -11,7 +12,7 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
   });
 
   const response: ResponseBody = {
-    cards: [subscriptionStatus, usefulLinks],
+    cards: [subscriptionStatus, usefulLinks, timer],
   };
 
   res.status(200).json(response);
