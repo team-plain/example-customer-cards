@@ -1,0 +1,25 @@
+queue_rules:
+  - name: default
+    conditions:
+      - "#approved-reviews-by>=1"
+      - base=main
+    allow_inplace_checks: true
+pull_request_rules:
+  - name: Merge on label + approval
+    conditions:
+      - "#approved-reviews-by>=1"
+      - "#changes-requested-reviews-by=0"
+      - base=main
+      - label=ready-to-merge
+      - label!=do-not-merge
+    actions:
+      queue:
+        name: default
+        method: squash
+        update_method: merge
+  - name: ask to resolve conflict
+    conditions:
+      - conflict
+    actions:
+        comment:
+          message: This pull request is conflicting. Could you fix it @{{author}}? 🙏        
