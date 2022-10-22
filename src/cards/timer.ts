@@ -14,7 +14,7 @@ export const timer: Card = {
   components: [
     {
       componentText: {
-        text: `The time is ${formatTime} (UTC)`,
+        text: `The time is ${formatTime()} (UTC)`,
       },
     },
   ],
