@@ -1,56 +1,58 @@
-import { Card } from '../models';
+import { Card } from '../response';
 
-export const subscriptionStatus: Card = {
-  key: 'subscription-status',
-  timeToLiveSeconds: null,
-  components: [
-    {
-      componentRow: {
-        rowMainContent: [
-          {
-            componentText: {
-              text: 'Plan',
-              textColor: 'MUTED',
-              textSize: 'M',
+export default (): Card => {
+  return {
+    key: 'subscription-status',
+    timeToLiveSeconds: null,
+    components: [
+      {
+        componentRow: {
+          rowMainContent: [
+            {
+              componentText: {
+                text: 'Plan',
+                textColor: 'MUTED',
+                textSize: 'M',
+              },
             },
-          },
-        ],
-        rowAsideContent: [
-          {
-            componentBadge: {
-              badgeLabel: 'Starter',
-              badgeColor: 'YELLOW',
+          ],
+          rowAsideContent: [
+            {
+              componentBadge: {
+                badgeLabel: 'Starter',
+                badgeColor: 'YELLOW',
+              },
             },
-          },
-        ],
+          ],
+        },
       },
-    },
-    {
-      componentSpacer: {
-        spacerSize: 'L',
+      {
+        componentSpacer: {
+          spacerSize: 'L',
+        },
       },
-    },
-    {
-      componentRow: {
-        rowMainContent: [
-          {
-            componentText: {
-              text: 'Expires',
-              textColor: 'MUTED',
-              textSize: 'M',
+      {
+        componentRow: {
+          rowMainContent: [
+            {
+              componentText: {
+                text: 'Expires',
+                textColor: 'MUTED',
+                textSize: 'M',
+              },
             },
-          },
-        ],
-        rowAsideContent: [
-          {
-            componentText: {
-              text: '07 Jan, 2023',
-              textColor: 'MUTED',
-              textSize: 'M',
+          ],
+          rowAsideContent: [
+            {
+              componentText: {
+                text: '07 Jan, 2023',
+                textColor: 'MUTED',
+                textSize: 'M',
+              },
             },
-          },
-        ],
+          ],
+        },
       },
-    },
-  ],
+    ],
+  };
 };

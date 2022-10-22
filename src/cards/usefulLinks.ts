@@ -1,14 +1,16 @@
-import { Card } from '../models';
+import { Card } from '../response';
 
-export const usefulLinks: Card = {
-  key: 'useful-links',
-  timeToLiveSeconds: null,
-  components: [
-    {
-      componentLinkButton: {
-        linkButtonLabel: 'View in admin',
-        linkButtonUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+export default (): Card => {
+  return {
+    key: 'useful-links',
+    timeToLiveSeconds: null,
+    components: [
+      {
+        componentLinkButton: {
+          linkButtonLabel: 'View in admin',
+          linkButtonUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+        },
       },
-    },
-  ],
+    ],
+  };
 };

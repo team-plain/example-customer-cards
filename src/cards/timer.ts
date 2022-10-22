@@ -1,21 +1,20 @@
-import { Card } from '../models';
+import { Card } from '../response';
 
-function formatTime(): string {
+export default (): Card => {
   const now = new Date();
   const hours = now.getHours();
   const minutes = now.getMinutes();
   const seconds = now.getSeconds();
-  return `${hours}:${minutes}:${seconds}`;
-}
 
-export const timer: Card = {
-  key: 'timer',
-  timeToLiveSeconds: null,
-  components: [
-    {
-      componentText: {
-        text: `The time is ${formatTime()} (UTC)`,
+  return {
+    key: 'timer',
+    timeToLiveSeconds: null,
+    components: [
+      {
+        componentText: {
+          text: `The time is ${hours}:${minutes}:${seconds} (UTC)`,
+        },
       },
-    },
-  ],
+    ],
+  };
 };
