@@ -1,0 +1,21 @@
+{
+  "name": "@team-plain/example-customer-cards-api",
+  "description": "Example customer cards that can be used for testing and learning",
+  "version": "1.0.0",
+  "engines": {
+    "node": "14.x",
+    "pnpm": "7.x"
+  },
+  "private": true,
+  "scripts": {
+    "dev": "ts-node-dev src/dev.ts",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.14",
+    "@types/node": "^18.11.3",
+    "express": "^4.18.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.8.4"
+  }
+}
