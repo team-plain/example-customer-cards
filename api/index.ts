@@ -21,8 +21,9 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
   const response: ResponseBody = {
     cards,
   };
-  //Recommended: vercel.com/docs/concepts/functions/serverless-functions/edge-caching#recommended-cache-control
-  res.setHeader('Cache-Control', 'max-age=0, s-maxage=86400');
+
+  // Disabled vercel's edge cache
+  res.setHeader('Cache-Control', 'no-cache');
 
   res.status(200).json(response);
 }
