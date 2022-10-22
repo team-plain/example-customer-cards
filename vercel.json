@@ -1,6 +1,6 @@
 {
   "functions": {
-    "/": {
+    "customer-cards/": {
       "memory": 1024
     }
   },
