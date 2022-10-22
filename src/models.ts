@@ -1,4 +1,5 @@
 import { z } from 'zod';
+import {Component} from "./components";
 
 export const RequestBody = z.object({
   keys: z.array(z.string()),
@@ -12,9 +13,7 @@ export type RequestBody = z.infer<typeof RequestBody>;
 export const Card = z.object({
   key: z.string(),
   timeToLiveSeconds: z.number().int().min(0).nullish().default(null),
-  // TODO We don't have easily usable zod models for components yet
-  // and I don't want to yet mantain a copy here, any will do!
-  components: z.array(z.any()).nullable(),
+  components: z.array(Component).nullable(),
 });
 export type Card = z.infer<typeof Card>;
 
