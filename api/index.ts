@@ -25,5 +25,5 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
   // Disabled vercel's edge cache
   res.setHeader('Cache-Control', 'no-cache');
 
-  res.status(200).json(response);
+  res.status(200).json(JSON.stringify(response, null, 2));
 }
