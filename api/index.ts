@@ -7,7 +7,7 @@ import subscriptionStatusCard from '../src/cards/subscriptionStatus';
 import usefulLinksCard from '../src/cards/usefulLinks';
 import timerCard from '../src/cards/timer';
 
-const ALL_CARDS = [subscriptionStatusCard, usefulLinksCard, timerCard];
+const ALL_CARDS: (() => Card)[] = [subscriptionStatusCard, usefulLinksCard, timerCard];
 
 export default function handler(req: VercelRequest, res: VercelResponse) {
   console.log(`Received request:`);
@@ -16,10 +16,8 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
     headers: req.headers,
   });
 
-  const cards: Card[] = ALL_CARDS.map((c) => c());
-
   const response: ResponseBody = {
-    cards,
+    cards: ALL_CARDS.map((cardFn) => cardFn()),
   };
 
   // Disabled vercel's edge cache
