@@ -2,6 +2,7 @@
   "name": "@team-plain/example-customer-cards",
   "description": "Example customer cards that can be used for testing and learning Plain",
   "version": "1.0.0",
+  "license": "MIT",
   "engines": {
     "node": "16.x",
     "npm": "8.x"
