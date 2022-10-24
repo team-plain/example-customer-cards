@@ -1,10 +1,11 @@
 {
-  "name": "@team-plain/example-customer-cards-api",
-  "description": "Example customer cards that can be used for testing and learning",
+  "name": "@team-plain/example-customer-cards",
+  "description": "Example customer cards that can be used for testing and learning Plain",
   "version": "1.0.0",
+  "license": "MIT",
   "engines": {
-    "node": "14.x",
-    "pnpm": "7.x"
+    "node": "16.x",
+    "npm": "8.x"
   },
   "private": true,
   "scripts": {
@@ -14,7 +15,10 @@
   },
   "dependencies": {
     "@vercel/node": "^2.5.26",
-    "prettier": "^2.7.1",
-    "zod": "^3.19.1"
+    "zod": "3.19.1"
+  },
+  "devDependencies": {
+    "typescript": "4.8.4",
+    "prettier": "2.7.1"
   }
 }
