@@ -15,9 +15,6 @@ export type ComponentDividerSpacingSize = z.infer<typeof ComponentDividerSpacing
 export const ComponentBadgeColor = z.enum(['GREY', 'GREEN', 'YELLOW', 'RED', 'BLUE']);
 export type ComponentBadgeColor = z.infer<typeof ComponentBadgeColor>;
 
-export const ComponentContainerSpacingSize = z.enum(['XS', 'S', 'M', 'L', 'XL']);
-export type ComponentContainerSpacingSize = z.infer<typeof ComponentContainerSpacingSize>;
-
 const Text = z.object({
   textSize: ComponentTextSize.nullish(),
   textColor: ComponentTextColor.nullish(),
@@ -73,7 +70,6 @@ const ContainerContentUnionInput = z.object({
 
 const Container = z.object({
   containerContent: z.array(ContainerContentUnionInput).min(1),
-  containerSpacingSize: ComponentContainerSpacingSize.nullish(),
 });
 
 export const Component = z.object({
