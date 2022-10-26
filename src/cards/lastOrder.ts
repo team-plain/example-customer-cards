@@ -35,7 +35,7 @@ export default (): Card => {
                 rowAsideContent: [
                   {
                     componentBadge: {
-                      badgeLabel: 'Deliverd',
+                      badgeLabel: 'Delivered',
                       badgeColor: 'GREEN',
                     },
                   },
