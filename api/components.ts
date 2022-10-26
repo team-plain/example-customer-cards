@@ -1,12 +1,12 @@
 import { Card } from '../src/response';
-import badge from '../src/cards/examples/badge';
-import container from '../src/cards/examples/container';
-import copyButton from '../src/cards/examples/copyButton';
-import text from '../src/cards/examples/text';
-import divider from '../src/cards/examples/divider';
-import linkButton from '../src/cards/examples/linkButton';
-import row from '../src/cards/examples/row';
-import spacer from '../src/cards/examples/spacer';
+import badge from '../src/cards/components/badge';
+import container from '../src/cards/components/container';
+import copyButton from '../src/cards/components/copyButton';
+import text from '../src/cards/components/text';
+import divider from '../src/cards/components/divider';
+import linkButton from '../src/cards/components/linkButton';
+import row from '../src/cards/components/row';
+import spacer from '../src/cards/components/spacer';
 import { VercelRequest, VercelResponse } from '@vercel/node';
 
 const COMPONENT_EXAMPLE_CARDS: (() => Card)[] = [
