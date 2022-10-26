@@ -17,7 +17,7 @@ const COMPONENT_EXAMPLE_CARDS: (() => Card)[] = [
   divider,
   linkButton,
   row,
-  spacer
+  spacer,
 ];
 
 export default function handler(req: VercelRequest, res: VercelResponse) {

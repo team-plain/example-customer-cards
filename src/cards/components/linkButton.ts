@@ -6,11 +6,11 @@ export default (): Card => {
     timeToLiveSeconds: null,
     components: [
       {
-        "componentLinkButton": {
-          "linkButtonLabel": "Open in Admin Portal",
-          "linkButtonUrl": "https://example.com"
-        }
-      }
+        componentLinkButton: {
+          linkButtonLabel: 'Open in Admin Portal',
+          linkButtonUrl: 'https://example.com',
+        },
+      },
     ],
   };
 };

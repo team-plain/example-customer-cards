@@ -6,78 +6,78 @@ export default (): Card => {
     timeToLiveSeconds: null,
     components: [
       {
-        "componentRow": {
-          "rowMainContent": [
+        componentRow: {
+          rowMainContent: [
             {
-              "componentText": {
-                "text": "Membership"
-              }
-            }
+              componentText: {
+                text: 'Membership',
+              },
+            },
           ],
-          "rowAsideContent": [
+          rowAsideContent: [
             {
-              "componentBadge": {
-                "badgeLabel": "Premium plan",
-                "badgeColor": "BLUE"
-              }
-            }
-          ]
-        }
-      },
-      {
-        "componentSpacer": {
-          "spacerSize": "S"
-        }
-      },
-      {
-        "componentRow": {
-          "rowMainContent": [
-            {
-              "componentText": {
-                "text": "Plan start date"
-              }
-            }
+              componentBadge: {
+                badgeLabel: 'Premium plan',
+                badgeColor: 'BLUE',
+              },
+            },
           ],
-          "rowAsideContent": [
+        },
+      },
+      {
+        componentSpacer: {
+          spacerSize: 'S',
+        },
+      },
+      {
+        componentRow: {
+          rowMainContent: [
             {
-              "componentText": {
-                "text": "2022-10-03 14:12 BST"
-              }
-            }
-          ]
-        }
-      },
-      {
-        "componentSpacer": {
-          "spacerSize": "S"
-        }
-      },
-      {
-        "componentText": {
-          "text": "Address",
-          "textColor": "MUTED",
-          "textSize": "S"
-        }
-      },
-      {
-        "componentRow": {
-          "rowMainContent": [
-            {
-              "componentText": {
-                "text": "123 Example Street, Fakerton, FA6 4UX"
-              }
-            }
+              componentText: {
+                text: 'Plan start date',
+              },
+            },
           ],
-          "rowAsideContent": [
+          rowAsideContent: [
             {
-              "componentCopyButton": {
-                "copyButtonTooltipLabel": "Copy address",
-                "copyButtonValue": "123 Example Street, Fakerton, FA6 4UX"
-              }
-            }
-          ]
-        }
-      }
+              componentText: {
+                text: '2022-10-03 14:12 BST',
+              },
+            },
+          ],
+        },
+      },
+      {
+        componentSpacer: {
+          spacerSize: 'S',
+        },
+      },
+      {
+        componentText: {
+          text: 'Address',
+          textColor: 'MUTED',
+          textSize: 'S',
+        },
+      },
+      {
+        componentRow: {
+          rowMainContent: [
+            {
+              componentText: {
+                text: '123 Example Street, Fakerton, FA6 4UX',
+              },
+            },
+          ],
+          rowAsideContent: [
+            {
+              componentCopyButton: {
+                copyButtonTooltipLabel: 'Copy address',
+                copyButtonValue: '123 Example Street, Fakerton, FA6 4UX',
+              },
+            },
+          ],
+        },
+      },
     ],
   };
 };

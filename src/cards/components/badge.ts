@@ -6,10 +6,10 @@ export default (): Card => {
     timeToLiveSeconds: null,
     components: [
       {
-        "componentBadge": {
-          "badgeLabel": "Subscribed",
-          "badgeColor": "GREEN"
-        }
+        componentBadge: {
+          badgeLabel: 'Subscribed',
+          badgeColor: 'GREEN',
+        },
       },
     ],
   };

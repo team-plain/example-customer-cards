@@ -6,60 +6,60 @@ export default (): Card => {
     timeToLiveSeconds: null,
     components: [
       {
-        "componentText": {
-          "text": "Content before an XS divider"
-        }
+        componentText: {
+          text: 'Content before an XS divider',
+        },
       },
       {
-        "componentDivider": {
-          "dividerSpacingSize": "XS"
-        }
+        componentDivider: {
+          dividerSpacingSize: 'XS',
+        },
       },
       {
-        "componentText": {
-          "text": "Content before an S divider"
-        }
+        componentText: {
+          text: 'Content before an S divider',
+        },
       },
       {
-        "componentDivider": {
-          "dividerSpacingSize": "S"
-        }
+        componentDivider: {
+          dividerSpacingSize: 'S',
+        },
       },
       {
-        "componentText": {
-          "text": "Content before an M divider"
-        }
+        componentText: {
+          text: 'Content before an M divider',
+        },
       },
       {
-        "componentDivider": {
-          "dividerSpacingSize": "M"
-        }
+        componentDivider: {
+          dividerSpacingSize: 'M',
+        },
       },
       {
-        "componentText": {
-          "text": "Content before an L divider"
-        }
+        componentText: {
+          text: 'Content before an L divider',
+        },
       },
       {
-        "componentDivider": {
-          "dividerSpacingSize": "L"
-        }
+        componentDivider: {
+          dividerSpacingSize: 'L',
+        },
       },
       {
-        "componentText": {
-          "text": "Content before an XL divider"
-        }
+        componentText: {
+          text: 'Content before an XL divider',
+        },
       },
       {
-        "componentDivider": {
-          "dividerSpacingSize": "XL"
-        }
+        componentDivider: {
+          dividerSpacingSize: 'XL',
+        },
       },
       {
-        "componentText": {
-          "text": "Content after an XL divider"
-        }
-      }
+        componentText: {
+          text: 'Content after an XL divider',
+        },
+      },
     ],
   };
 };

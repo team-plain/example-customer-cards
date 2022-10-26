@@ -6,16 +6,16 @@ export default (): Card => {
     timeToLiveSeconds: null,
     components: [
       {
-        "componentContainer": {
-          "containerContent": [
+        componentContainer: {
+          containerContent: [
             {
-              "componentText": {
-                "text": "Container content"
-              }
-            }
-          ]
-        }
-      }
+              componentText: {
+                text: 'Container content',
+              },
+            },
+          ],
+        },
+      },
     ],
   };
 };
