@@ -1,10 +1,10 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
+import { Card, ResponseBody } from '../src/response';
 
 // Cards:
 import planDetailsCard from '../src/cards/planDetails';
 import subscriptionStatusCard from '../src/cards/subscriptionStatus';
 import timerCard from '../src/cards/timer';
-import { Card, ResponseBody } from '../src/response';
 import lastOrder from '../src/cards/lastOrder';
 
 const ALL_CARDS: (() => Card)[] = [subscriptionStatusCard, timerCard, planDetailsCard, lastOrder];
