@@ -1,13 +1,18 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { ResponseBody } from '../src/response';
-import { Card } from '../src/response';
+import { Card, ResponseBody } from '../src/response';
 
 // Cards:
+import planDetailsCard from '../src/cards/planDetails';
 import subscriptionStatusCard from '../src/cards/subscriptionStatus';
-import usefulLinksCard from '../src/cards/usefulLinks';
 import timerCard from '../src/cards/timer';
+import usefulLinksCard from '../src/cards/usefulLinks';
 
-const ALL_CARDS: (() => Card)[] = [subscriptionStatusCard, usefulLinksCard, timerCard];
+const ALL_CARDS: (() => Card)[] = [
+  subscriptionStatusCard,
+  usefulLinksCard,
+  timerCard,
+  planDetailsCard,
+];
 
 export default function handler(req: VercelRequest, res: VercelResponse) {
   console.log(`Received request:`);
