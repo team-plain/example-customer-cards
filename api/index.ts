@@ -5,14 +5,9 @@ import { Card, ResponseBody } from '../src/response';
 import planDetailsCard from '../src/cards/planDetails';
 import subscriptionStatusCard from '../src/cards/subscriptionStatus';
 import timerCard from '../src/cards/timer';
-import usefulLinksCard from '../src/cards/usefulLinks';
+import lastOrder from '../src/cards/lastOrder';
 
-const ALL_CARDS: (() => Card)[] = [
-  subscriptionStatusCard,
-  usefulLinksCard,
-  timerCard,
-  planDetailsCard,
-];
+const ALL_CARDS: (() => Card)[] = [subscriptionStatusCard, timerCard, planDetailsCard, lastOrder];
 
 export default function handler(req: VercelRequest, res: VercelResponse) {
   console.log(`Received request:`);
