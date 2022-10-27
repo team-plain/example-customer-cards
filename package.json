@@ -9,18 +9,20 @@
   },
   "private": true,
   "scripts": {
-    "dev": "vercel dev",
+    "start": "vercel dev",
     "lint": "prettier --config=.prettierrc --check '**/*.{ts,tsx}'",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "preinstall": "npx only-allow npm"
   },
   "dependencies": {
-    "@types/luxon": "^3.0.2",
+    "@types/luxon": "3.0.2",
     "@vercel/node": "^2.5.26",
-    "luxon": "^3.0.4",
+    "luxon": "3.0.4",
     "zod": "3.19.1"
   },
   "devDependencies": {
     "prettier": "2.7.1",
-    "typescript": "4.8.4"
+    "typescript": "4.8.4",
+    "vercel": "28.4.12"
   }
 }
