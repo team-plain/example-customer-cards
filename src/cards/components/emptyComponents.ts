@@ -1,8 +1,8 @@
-import { Card } from '../response';
+import { Card } from '../../response';
 
 export default (): Card => {
   return {
-    key: 'no-data',
+    key: 'empty-components',
     timeToLiveSeconds: null,
     components: [],
   };

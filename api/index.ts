@@ -6,9 +6,8 @@ import planDetailsCard from '../src/cards/planDetails';
 import subscriptionStatusCard from '../src/cards/subscriptionStatus';
 import timerCard from '../src/cards/timer';
 import lastOrder from '../src/cards/lastOrder';
-import noData from '../src/cards/noData';
 
-const ALL_CARDS: (() => Card)[] = [subscriptionStatusCard, timerCard, planDetailsCard, lastOrder, noData];
+const ALL_CARDS: (() => Card)[] = [subscriptionStatusCard, timerCard, planDetailsCard, lastOrder];
 
 export default function handler(req: VercelRequest, res: VercelResponse) {
   // Disabled vercel's edge cache
