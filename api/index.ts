@@ -19,7 +19,7 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
   const cards = cardExamples
     .map((cardFn) => cardFn())
     .filter((card) => {
-      return requestedCardKeys.length > 0 && requestedCardKeys.includes(card.key);
+      return requestedCardKeys.length === 0 || requestedCardKeys.includes(card.key);
     });
 
   res.status(200).json({
