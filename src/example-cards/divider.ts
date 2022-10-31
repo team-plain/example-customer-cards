@@ -1,4 +1,4 @@
-import { Card } from '../../response';
+import { Card } from '../response';
 
 export default (): Card => {
   return {
