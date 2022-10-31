@@ -1,7 +1,6 @@
 {
   "rewrites": [
-    { "source": "/", "destination": "/api/cards" },
-    { "source": "/cards", "destination": "/api/cards" },
-    { "source": "/card/:cardKey", "destination": "/api/card/:cardKey" }
-  ]
+    { "source": "/", "destination": "/api/" }
+  ],
+  "trailingSlash": true
 }
