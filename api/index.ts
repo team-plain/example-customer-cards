@@ -3,9 +3,9 @@ import { cardExamples } from '../src/example-cards';
 
 /**
  * Example:
- * - /cards -> will return all cards
- * - /cards?cardKey=timer -> will return 1 card
- * - /cards?cardKey=timer&cardKey=last-order -> will return 2 cards
+ * - /-> will return all cards
+ * - /?cardKey=timer -> will return 1 card
+ * - /?cardKey=timer&cardKey=last-order -> will return 2 cards
  */
 export default function handler(req: VercelRequest, res: VercelResponse) {
   // Disabled vercel's edge cache
