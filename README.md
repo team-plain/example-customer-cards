@@ -2,31 +2,23 @@
 
 This is a fake back end which allows us to build, test and demo [Plain Customer Cards](https://docs.plain.com/adding-context/customer-cards).
 
-## Realistic example cards
 
-You can use these realistic example cards to try out customer cards.
-
-- Title: you can enter whatever you'd like
-- Card keys: open up [./src/cards](./src/cards) or the [API](https://example-customer-cards.plain.com/) to see available keys.
-- Default TTL: you can enter whatever you like (for example 15 seconds)
-- URL: `https://example-customer-cards.plain.com/` (no headers required)
-
-## Component examples
-
-You can use these realistic example cards to try out one of the components documented on our [Plain UI Components](https://docs.plain.com/adding-context/ui-components) page.
+### Trying example cards
+Go to Plain, log in and go to your workspace **Settings** > **Customer Cards**. Then create a new customer card with the following values:
 
 - Title: you can enter whatever you'd like
-- Card keys: open up [./src/cards/components](./src/cards) or the [API](https://example-customer-cards.plain.com/components) to see available keys.
+- Card key: One of the card keys you can find in [src/example-cards/](./src/example-cards/). Not sure what to pick? Try `subscription-status` or `last-order`.
 - Default TTL: you can enter whatever you like (for example 15 seconds)
-- URL: `https://example-customer-cards.plain.com/components`
+- URL: `https://example-customer-cards.plain.com/?cardKey={{CARD_KEY}}` replacing `{{CARD_KEY}}` with the key you chose above.
+
 
 ## Adding a new card
 
 To add a new card:
 
-1. add it to [./src/cards](./src/cards) folder
-2. import it and use it in [the api handler](./api/index.ts)
-3. open a PR and use the preview URL to test
+1. Add it to [./src/example-cards](./src/example-cards) folder
+1. Import it it in [the index file](./src/example-cards//index.ts)
+1. Open a PR and use the preview URL to test
 
 ## Running locally
 

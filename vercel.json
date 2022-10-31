@@ -1,6 +1,6 @@
 {
   "rewrites": [
-    { "source": "/", "destination": "/api" },
-    { "source": "/components", "destination": "/api/components" }
-  ]
+    { "source": "/", "destination": "/api/" }
+  ],
+  "trailingSlash": true
 }
