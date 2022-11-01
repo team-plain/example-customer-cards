@@ -8,27 +8,27 @@ The cards are generally static with only a few parts changing (such as timestamp
 
 ### `customer-details`
 
-![example customer-details](./images/example-customer-details.png)
+<img alt="example customer-details" src="./images/example-customer-details.png" width="360px"/>
 
 ### `last-order`
 
-![example last-order](./images/example-last-order.png)
+<img alt="example last-order" src="./images/example-last-order.png" width="360px"/>
 
 ### `latest-invoice`
 
-![example latest-invoice](./images/example-latest-invoice.png)
+<img alt="example latest-invoice" src="./images/example-latest-invoice.png" width="360px"/>
 
 ### `sentry`
 
-![example sentry](./images/example-sentry.png)
+<img alt="example sentry" src="./images/example-sentry.png" width="360px"/>
 
 ### `subscription-status`
 
-![example subscription-status](./images/example-subscription-status.png)
+<img alt="example subscription-status" src="./images/example-subscription-status.png" width="360px"/>
 
 ### `usage`
 
-![example usage](./images/example-usage.png)
+<img alt="example usage" src="./images/example-usage.png" width="360px">
 
 
 ## Trying example cards
