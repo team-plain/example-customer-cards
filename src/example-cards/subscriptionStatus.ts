@@ -28,7 +28,7 @@ export default (): Card => {
       },
       {
         componentSpacer: {
-          spacerSize: 'S',
+          spacerSize: 'M',
         },
       },
       {

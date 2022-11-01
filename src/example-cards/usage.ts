@@ -3,7 +3,7 @@ import { Card } from '../response';
 
 export default (): Card => {
   return {
-    key: 'last-order',
+    key: 'usage',
     timeToLiveSeconds: null,
     components: [
       {
@@ -21,21 +21,21 @@ export default (): Card => {
                     componentText: {
                       textSize: 'M',
                       textColor: 'NORMAL',
-                      text: 'Order #123',
+                      text: 'Events sent',
                     },
                   },
                   {
                     componentText: {
                       textSize: 'S',
                       textColor: 'MUTED',
-                      text: `${DateTime.now().minus({ days: 3 }).toFormat('dd LLL yyyy')}`,
+                      text: `This billing period`,
                     },
                   },
                 ],
                 rowAsideContent: [
                   {
                     componentBadge: {
-                      badgeLabel: 'Delivered',
+                      badgeLabel: '593 of 1000',
                       badgeColor: 'GREEN',
                     },
                   },
@@ -51,14 +51,14 @@ export default (): Card => {
               componentText: {
                 textSize: 'S',
                 textColor: 'MUTED',
-                text: 'Order value',
+                text: 'Sent in the last 24 hours',
               },
             },
             {
               componentText: {
                 textSize: 'M',
                 textColor: 'NORMAL',
-                text: '£512.00',
+                text: '46',
               },
             },
             {
@@ -70,14 +70,14 @@ export default (): Card => {
               componentText: {
                 textSize: 'S',
                 textColor: 'MUTED',
-                text: 'Shipping address',
+                text: 'Sent in the last 7 days',
               },
             },
             {
               componentText: {
                 textSize: 'M',
                 textColor: 'NORMAL',
-                text: '123 Example Street, Fakerton, FA6 4UX, Hertfordshire, UK',
+                text: '297',
               },
             },
             {
@@ -87,7 +87,7 @@ export default (): Card => {
             },
             {
               componentLinkButton: {
-                linkButtonLabel: 'Track order',
+                linkButtonLabel: 'View usage report',
                 linkButtonUrl: 'https://plain.com'
               }
             }
