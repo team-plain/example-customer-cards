@@ -4,6 +4,8 @@ This repo is for a dummy backend which enables the building, testing and demoing
 
 The cards are generally static with only a few parts changing (such as timestamps).
 
+![Overview of the example customer cards](images/overview.png)
+
 ## Example cards
 
 Each card has a card key that can be used when creating a Customer Card Config in your settings.
