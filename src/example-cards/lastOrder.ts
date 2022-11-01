@@ -88,9 +88,9 @@ export default (): Card => {
             {
               componentLinkButton: {
                 linkButtonLabel: 'Track order',
-                linkButtonUrl: 'https://plain.com'
-              }
-            }
+                linkButtonUrl: 'https://plain.com',
+              },
+            },
           ],
         },
       },

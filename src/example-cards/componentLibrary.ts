@@ -1,28 +1,35 @@
 import { Card } from '../response';
 
 type NonNullComponent = Exclude<Card['components'], null>;
-function component(name: string, components: NonNullComponent, first: boolean = false): NonNullComponent {
+function component(
+  name: string,
+  components: NonNullComponent,
+  first: boolean = false
+): NonNullComponent {
   return [
-    ...(!first ? [{
-      componentSpacer: {
-        spacerSize: 'XL' as const,
-      },
-    }]: []),
+    ...(!first
+      ? [
+          {
+            componentSpacer: {
+              spacerSize: 'XL' as const,
+            },
+          },
+        ]
+      : []),
     {
       componentText: {
         text: `**Component ${name} example:**`,
-        textSize: 'M'
+        textSize: 'M',
       },
     },
     {
       componentDivider: {
         dividerSpacingSize: 'S',
-      }
+      },
     },
-    ...components
-  ]
+    ...components,
+  ];
 }
-
 
 const COMPONENTS: Record<string, NonNullComponent> = {
   badge: [
@@ -303,13 +310,15 @@ const COMPONENTS: Record<string, NonNullComponent> = {
         textColor: 'ERROR',
       },
     },
-  ]
-}
+  ],
+};
 
 export default (): Card => {
   return {
     key: 'component-library',
     timeToLiveSeconds: null,
-    components: Object.entries(COMPONENTS).flatMap(([key, value], idx) => component(key, value, idx === 0))
+    components: Object.entries(COMPONENTS).flatMap(([key, value], idx) =>
+      component(key, value, idx === 0)
+    ),
   };
 };

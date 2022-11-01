@@ -25,7 +25,9 @@ export default (): Card => {
               componentText: {
                 textSize: 'S',
                 textColor: 'MUTED',
-                text: `Due date: ${DateTime.utc().minus({ days: 1 }).toLocaleString(DateTime.DATE_MED)}`,
+                text: `Due date: ${DateTime.utc()
+                  .minus({ days: 1 })
+                  .toLocaleString(DateTime.DATE_MED)}`,
               },
             },
           ],
@@ -36,7 +38,6 @@ export default (): Card => {
                 badgeColor: 'RED',
               },
             },
-
           ],
         },
       },
@@ -56,7 +57,13 @@ export default (): Card => {
         componentText: {
           textSize: 'M',
           textColor: 'NORMAL',
-          text: `${DateTime.utc().minus({ month: 1 }).startOf('month').toLocaleString(DateTime.DATE_MED)} – ${DateTime.utc().minus({ month: 1 }).endOf('month').toLocaleString(DateTime.DATE_MED)}`,
+          text: `${DateTime.utc()
+            .minus({ month: 1 })
+            .startOf('month')
+            .toLocaleString(DateTime.DATE_MED)} – ${DateTime.utc()
+            .minus({ month: 1 })
+            .endOf('month')
+            .toLocaleString(DateTime.DATE_MED)}`,
         },
       },
       {
@@ -95,7 +102,6 @@ export default (): Card => {
               },
             },
           ],
-
         },
       },
       {

@@ -1,10 +1,10 @@
 import { Card } from '../response';
 
 function genRequestId() {
-  return Math.random().toString(36).substring(2, 15)+ '-' +
-    Math.random().toString(36).substring(2, 15);
+  return (
+    Math.random().toString(36).substring(2, 15) + '-' + Math.random().toString(36).substring(2, 15)
+  );
 }
-
 
 export default (): Card => {
   const requestId = genRequestId();
@@ -175,27 +175,27 @@ export default (): Card => {
                   {
                     componentLinkButton: {
                       linkButtonLabel: 'View Sentry',
-                      linkButtonUrl: 'https://plain.com'
-                    }
-                  }
+                      linkButtonUrl: 'https://plain.com',
+                    },
+                  },
                 ],
                 rowAsideContent: [
                   {
                     componentLinkButton: {
                       linkButtonLabel: 'View Logs',
-                      linkButtonUrl: 'https://plain.com'
-                    }
-                  }
-                ]
-              }
-            }
+                      linkButtonUrl: 'https://plain.com',
+                    },
+                  },
+                ],
+              },
+            },
           ],
         },
       },
       {
         componentSpacer: {
-          spacerSize: 'S'
-        }
+          spacerSize: 'S',
+        },
       },
       {
         componentContainer: {
@@ -281,7 +281,9 @@ export default (): Card => {
             },
             {
               componentText: {
-                text: `[THROTTLE] Request rate exceeded. Backing off and retrying in ${Math.floor(Math.random()*999+1)}ms.`,
+                text: `[THROTTLE] Request rate exceeded. Backing off and retrying in ${Math.floor(
+                  Math.random() * 999 + 1
+                )}ms.`,
                 textSize: 'S',
               },
             },
@@ -323,23 +325,23 @@ export default (): Card => {
                   {
                     componentLinkButton: {
                       linkButtonLabel: 'View Sentry',
-                      linkButtonUrl: 'https://plain.com'
-                    }
-                  }
+                      linkButtonUrl: 'https://plain.com',
+                    },
+                  },
                 ],
                 rowAsideContent: [
                   {
                     componentLinkButton: {
                       linkButtonLabel: 'View Logs',
-                      linkButtonUrl: 'https://plain.com'
-                    }
-                  }
-                ]
-              }
-            }
+                      linkButtonUrl: 'https://plain.com',
+                    },
+                  },
+                ],
+              },
+            },
           ],
         },
-      }
+      },
     ],
   };
 };

@@ -8,8 +8,8 @@ export default (): Card => {
     components: [
       {
         componentSpacer: {
-          spacerSize: 'S'
-        }
+          spacerSize: 'S',
+        },
       },
       {
         componentRow: {
@@ -17,23 +17,25 @@ export default (): Card => {
             {
               componentText: {
                 text: 'Registered at',
-                textColor: 'MUTED'
-              }
-            }
+                textColor: 'MUTED',
+              },
+            },
           ],
           rowAsideContent: [
             {
               componentText: {
-                text: `${DateTime.utc().minus({month: 3, day: 2}).toLocaleString(DateTime.DATETIME_SHORT)}`
-              }
-            }
-          ]
-        }
+                text: `${DateTime.utc()
+                  .minus({ month: 3, day: 2 })
+                  .toLocaleString(DateTime.DATETIME_SHORT)}`,
+              },
+            },
+          ],
+        },
       },
       {
         componentSpacer: {
-          spacerSize: 'M'
-        }
+          spacerSize: 'M',
+        },
       },
       {
         componentRow: {
@@ -41,23 +43,25 @@ export default (): Card => {
             {
               componentText: {
                 text: 'Last signed in',
-                textColor: 'MUTED'
-              }
-            }
+                textColor: 'MUTED',
+              },
+            },
           ],
           rowAsideContent: [
             {
               componentText: {
-                text: `${DateTime.utc().minus({minutes: 3}).toLocaleString(DateTime.DATETIME_SHORT)}`
-              }
-            }
-          ]
-        }
+                text: `${DateTime.utc()
+                  .minus({ minutes: 3 })
+                  .toLocaleString(DateTime.DATETIME_SHORT)}`,
+              },
+            },
+          ],
+        },
       },
       {
         componentSpacer: {
-          spacerSize: 'M'
-        }
+          spacerSize: 'M',
+        },
       },
 
       {
@@ -66,23 +70,23 @@ export default (): Card => {
             {
               componentText: {
                 text: 'Last device used',
-                textColor: 'MUTED'
-              }
-            }
+                textColor: 'MUTED',
+              },
+            },
           ],
           rowAsideContent: [
             {
               componentText: {
-                text: Math.random() > 0.5 ? `iPhone 13 🍎` : `Galaxy S22  🤖`
-              }
-            }
-          ]
-        }
+                text: Math.random() > 0.5 ? `iPhone 13 🍎` : `Galaxy S22  🤖`,
+              },
+            },
+          ],
+        },
       },
       {
         componentSpacer: {
-          spacerSize: 'M'
-        }
+          spacerSize: 'M',
+        },
       },
       {
         componentRow: {
@@ -90,19 +94,19 @@ export default (): Card => {
             {
               componentText: {
                 text: 'Marketing preferences',
-                textColor: 'MUTED'
-              }
-            }
+                textColor: 'MUTED',
+              },
+            },
           ],
           rowAsideContent: [
             {
               componentText: {
-                text: Math.random() > 0.5 ? `Opted in 📨` : `Opted out 🙅`
-              }
-            }
-          ]
-        }
-      }
+                text: Math.random() > 0.5 ? `Opted in 📨` : `Opted out 🙅`,
+              },
+            },
+          ],
+        },
+      },
     ],
   };
 };

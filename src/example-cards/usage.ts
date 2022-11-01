@@ -88,9 +88,9 @@ export default (): Card => {
             {
               componentLinkButton: {
                 linkButtonLabel: 'View usage report',
-                linkButtonUrl: 'https://plain.com'
-              }
-            }
+                linkButtonUrl: 'https://plain.com',
+              },
+            },
           ],
         },
       },
