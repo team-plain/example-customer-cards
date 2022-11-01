@@ -48,17 +48,25 @@ export default (): Card => {
               },
             },
             {
-              componentText: {
-                textSize: 'S',
-                textColor: 'MUTED',
-                text: 'Sent in the last 24 hours',
-              },
-            },
-            {
-              componentText: {
-                textSize: 'M',
-                textColor: 'NORMAL',
-                text: '46',
+              componentRow: {
+                rowMainContent: [
+                  {
+                    componentText: {
+                      textSize: 'M',
+                      textColor: 'MUTED',
+                      text: 'Last 24 hours',
+                    },
+                  },
+                ],
+                rowAsideContent: [
+                  {
+                    componentText: {
+                      textSize: 'M',
+                      textColor: 'NORMAL',
+                      text: '**46**',
+                    },
+                  },
+                ],
               },
             },
             {
@@ -67,17 +75,25 @@ export default (): Card => {
               },
             },
             {
-              componentText: {
-                textSize: 'S',
-                textColor: 'MUTED',
-                text: 'Sent in the last 7 days',
-              },
-            },
-            {
-              componentText: {
-                textSize: 'M',
-                textColor: 'NORMAL',
-                text: '297',
+              componentRow: {
+                rowMainContent: [
+                  {
+                    componentText: {
+                      textSize: 'M',
+                      textColor: 'MUTED',
+                      text: 'Last 7 days',
+                    },
+                  },
+                ],
+                rowAsideContent: [
+                  {
+                    componentText: {
+                      textSize: 'M',
+                      textColor: 'NORMAL',
+                      text: '**297**',
+                    },
+                  },
+                ],
               },
             },
             {
