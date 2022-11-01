@@ -63,7 +63,7 @@ export default (): Card => {
             },
             {
               componentSpacer: {
-                spacerSize: 'M',
+                spacerSize: 'S',
               },
             },
             {
@@ -78,6 +78,17 @@ export default (): Card => {
                 textSize: 'M',
                 textColor: 'NORMAL',
                 text: '123 Example Street, Fakerton, FA6 4UX, Hertfordshire, UK',
+              },
+            },
+            {
+              componentDivider: {
+                dividerSpacingSize: 'M',
+              },
+            },
+            {
+              componentLinkButton: {
+                linkButtonLabel: 'Track order',
+                linkButtonUrl: 'https://plain.com',
               },
             },
           ],

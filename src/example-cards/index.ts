@@ -1,35 +1,27 @@
-import planDetailsCard from './planDetails';
 import subscriptionStatusCard from './subscriptionStatus';
 import timerCard from './timer';
 import lastOrder from './lastOrder';
-import badge from './badge';
-import container from './container';
-import copyButton from './copyButton';
-import divider from './divider';
 import emptyComponents from './emptyComponents';
-import linkButton from './linkButton';
 import nullComponents from './nullComponents';
-import row from './row';
-import spacer from './spacer';
-import text from './text';
 import { Card } from '../response';
+import componentLibrary from './componentLibrary';
+import customerDetails from './customerDetails';
+import usage from './usage';
+import latestInvoice from './latestInvoice';
+import sentry from './sentry';
 
 export const cardExamples: (() => Card)[] = [
   // realistic examples
+  customerDetails,
   subscriptionStatusCard,
-  timerCard,
-  planDetailsCard,
   lastOrder,
+  usage,
+  latestInvoice,
+  sentry,
+  timerCard,
 
   // component examples
-  badge,
-  container,
-  copyButton,
-  text,
-  divider,
-  linkButton,
-  row,
-  spacer,
+  componentLibrary,
 
   // error, null examples
   nullComponents,

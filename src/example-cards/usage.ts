@@ -3,7 +3,7 @@ import { Card } from '../response';
 
 export default (): Card => {
   return {
-    key: 'plan-details',
+    key: 'usage',
     timeToLiveSeconds: null,
     components: [
       {
@@ -20,24 +20,31 @@ export default (): Card => {
                   {
                     componentText: {
                       textSize: 'M',
+                      textColor: 'NORMAL',
+                      text: 'Events sent',
+                    },
+                  },
+                  {
+                    componentText: {
+                      textSize: 'S',
                       textColor: 'MUTED',
-                      text: 'Plan',
+                      text: `This billing period`,
                     },
                   },
                 ],
                 rowAsideContent: [
                   {
                     componentBadge: {
-                      badgeLabel: 'Starter',
-                      badgeColor: 'YELLOW',
+                      badgeLabel: '593 of 1000',
+                      badgeColor: 'GREEN',
                     },
                   },
                 ],
               },
             },
             {
-              componentSpacer: {
-                spacerSize: 'M',
+              componentDivider: {
+                dividerSpacingSize: 'M',
               },
             },
             {
@@ -47,7 +54,7 @@ export default (): Card => {
                     componentText: {
                       textSize: 'M',
                       textColor: 'MUTED',
-                      text: 'Expires',
+                      text: 'Last 24 hours',
                     },
                   },
                 ],
@@ -56,15 +63,15 @@ export default (): Card => {
                     componentText: {
                       textSize: 'M',
                       textColor: 'NORMAL',
-                      text: `${DateTime.now().plus({ days: 5 }).toFormat('dd LLL yyyy')}`,
+                      text: '**46**',
                     },
                   },
                 ],
               },
             },
             {
-              componentDivider: {
-                dividerSpacingSize: 'L',
+              componentSpacer: {
+                spacerSize: 'S',
               },
             },
             {
@@ -74,18 +81,30 @@ export default (): Card => {
                     componentText: {
                       textSize: 'M',
                       textColor: 'MUTED',
-                      text: 'ID: #84HBFU4SAF',
+                      text: 'Last 7 days',
                     },
                   },
                 ],
                 rowAsideContent: [
                   {
-                    componentCopyButton: {
-                      copyButtonTooltipLabel: 'Copy the ID',
-                      copyButtonValue: '#84HBFU4SAF',
+                    componentText: {
+                      textSize: 'M',
+                      textColor: 'NORMAL',
+                      text: '**297**',
                     },
                   },
                 ],
+              },
+            },
+            {
+              componentDivider: {
+                dividerSpacingSize: 'M',
+              },
+            },
+            {
+              componentLinkButton: {
+                linkButtonLabel: 'View usage report',
+                linkButtonUrl: 'https://plain.com',
               },
             },
           ],
