@@ -1,10 +1,12 @@
-# example-customer-cards
+# Example Plain Customer Cards
 
-This is a static backend which enables the building, testing and demoing of [Plain Customer Cards](https://docs.plain.com/adding-context/customer-cards).
+This repo is for a dummy backend which enables the building, testing and demoing of [Plain Customer Cards](https://docs.plain.com/adding-context/customer-cards).
 
 The cards are generally static with only a few parts changing (such as timestamps).
 
 ## Example cards
+
+Each card has a card key that can be used when creating a Customer Card Config in your settings.
 
 ### `customer-details`
 
@@ -31,14 +33,14 @@ The cards are generally static with only a few parts changing (such as timestamp
 <img alt="example usage" src="./images/example-usage.png" width="360px">
 
 
-## Trying example cards
+## Trying the example cards
 
 Go to Plain, log in and go to your workspace **Settings → Customer Cards**. Then create a new customer card with the following values:
 
-- Title: you can enter whatever you'd like, this will be shown in the Customer Panel
-- Card key: One of the card keys you can find in [src/example-cards/](./src/example-cards/). Not sure what to pick? Try `subscription-status` or `last-order`.
-- Default TTL: you can enter whatever you like (for example 15 seconds for a short TTL)
-- URL: `https://example-customer-cards.plain.com/?cardKey={{CARD_KEY}}` replacing `{{CARD_KEY}}` with the key you chose above.
+- **Title:** you can enter whatever you'd like, this will be shown in the Customer Panel
+- **Card key:** One of the card keys from above, or you can find in [src/example-cards/](./src/example-cards). Not sure what to pick? Try `subscription-status` or `last-order`.
+- **Default TTL:** you can enter whatever you like (for example 15 seconds for a short TTL)
+- **URL:** `https://example-customer-cards.plain.com/?cardKey={{CARD_KEY}}` replacing `{{CARD_KEY}}` with the key you chose above.
 
 ## Building your own Plain Customer Cards
 
