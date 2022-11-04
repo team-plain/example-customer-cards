@@ -12,25 +12,37 @@ Each card has a card key that can be used when creating a Customer Card Config i
 
 ### `customer-details`
 
+Full URL: https://example-customer-cards.plain.com/?cardKey=customer-details
+
 <img alt="example customer-details" src="./images/example-customer-details.png" width="360px"/>
 
 ### `last-order`
+
+Full URL: https://example-customer-cards.plain.com/?cardKey=last-order
 
 <img alt="example last-order" src="./images/example-last-order.png" width="360px"/>
 
 ### `latest-invoice`
 
+Full URL: https://example-customer-cards.plain.com/?cardKey=latest-invoice
+
 <img alt="example latest-invoice" src="./images/example-latest-invoice.png" width="360px"/>
 
 ### `sentry`
+
+Full URL: https://example-customer-cards.plain.com/?cardKey=sentry
 
 <img alt="example sentry" src="./images/example-sentry.png" width="360px"/>
 
 ### `subscription-status`
 
+Full URL: https://example-customer-cards.plain.com/?cardKey=subscription-status
+
 <img alt="example subscription-status" src="./images/example-subscription-status.png" width="360px"/>
 
 ### `usage`
+
+Full URL: https://example-customer-cards.plain.com/?cardKey=usage
 
 <img alt="example usage" src="./images/example-usage.png" width="360px">
 
