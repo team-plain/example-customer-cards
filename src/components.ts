@@ -30,6 +30,13 @@ const LinkButton = z.object({
   linkButtonLabel: z.string().max(500),
 });
 
+const WorkflowButton = z.object({
+  workflowButtonLabel: z.string().max(500),
+  workflowButtonWorkflowIdentifier: z.object({
+    workflowId: z.string(),
+  }),
+});
+
 const Spacer = z.object({
   spacerSize: ComponentSpacerSize,
 });
@@ -48,6 +55,7 @@ const RowContentUnionInput = z.object({
   componentText: Text.optional(),
   componentDivider: Divider.optional(),
   componentLinkButton: LinkButton.optional(),
+  componentWorkflowButton: WorkflowButton.optional(),
   componentSpacer: Spacer.optional(),
   componentBadge: Badge.optional(),
   componentCopyButton: CopyButton.optional(),
@@ -62,6 +70,7 @@ const ContainerContentUnionInput = z.object({
   componentText: Text.optional(),
   componentDivider: Divider.optional(),
   componentLinkButton: LinkButton.optional(),
+  componentWorkflowButton: WorkflowButton.optional(),
   componentSpacer: Spacer.optional(),
   componentBadge: Badge.optional(),
   componentCopyButton: CopyButton.optional(),
@@ -76,6 +85,7 @@ export const Component = z.object({
   componentText: Text.optional(),
   componentDivider: Divider.optional(),
   componentLinkButton: LinkButton.optional(),
+  componentWorkflowButton: WorkflowButton.optional(),
   componentSpacer: Spacer.optional(),
   componentBadge: Badge.optional(),
   componentCopyButton: CopyButton.optional(),

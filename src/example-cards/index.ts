@@ -10,6 +10,7 @@ import usage from './usage';
 import latestInvoice from './latestInvoice';
 import sentry from './sentry';
 import tutorial from './tutorial';
+import workflow from './workflow';
 
 export const cardExamples: (() => Card)[] = [
   // realistic examples
@@ -21,6 +22,7 @@ export const cardExamples: (() => Card)[] = [
   sentry,
   timerCard,
   tutorial,
+  workflow,
 
   // component examples
   componentLibrary,
