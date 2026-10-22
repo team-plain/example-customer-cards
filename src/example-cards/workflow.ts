@@ -22,7 +22,7 @@ export default (): Card => {
           workflowButtonLabel: 'Run workflow',
           workflowButtonWorkflowIdentifier: {
             // This is a placeholder workflow ID from Plain's developer environment. You'll need to replace this with the a workflow ID from your workspace.
-            workflowId: 'wf_01KKKW99MRJW6SY6C12JS0NRBR',
+            workflowId: 'wf_01M0T6DJ2CNQ2H787ZTMTYN24H',
           },
         },
       },
